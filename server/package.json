@@ -1,0 +1,27 @@
+{
+  "name": "live-bids-ivs-server",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node --enable-source-maps dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "create:channel": "tsx scripts/create-channel.ts",
+    "create:playback-keypair": "tsx scripts/create-playback-keypair.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ivs": "^3.616.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.616.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "fastify-cors": "^8.4.2",
+    "fastify-websocket": "^7.0.1",
+    "ioredis": "^5.3.2",
+    "jose": "^5.9.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}

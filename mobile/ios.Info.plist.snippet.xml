@@ -1,0 +1,4 @@
+<key>NSCameraUsageDescription</key>
+<string>Camera access to broadcast video</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Microphone access to broadcast audio</string>
